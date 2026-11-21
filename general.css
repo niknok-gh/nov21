@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Disables text selection */
+    -webkit-user-select: none; /* Chrome, Safari, Edge */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Older IE */
+    user-select: none;
+}
+:root {
+    /* Typography */
+    --font-primary: Tahoma, Verdana, system-ui, -apple-system, sans-serif;
+
+    /* Font Sizes */
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+
+    min-height: 100dvh;
+    max-width: 100dvw;
+    overflow-x: clip;
+}
+body {
+    min-height: 100dvh;
+    max-width: 100dvw;
+    overflow-x: clip;
+    
+    font-family: var(--font-primary);
+    font-size: var(--text-base);
+    line-height: 1.5;
+    color: var(--text-color);
+    
+    background-image: url("./Media/little-prince-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #0b1324;
+}
+.blur {
+    min-width: 100dvw;
+    min-height: 100dvh;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0px 0px 150px rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 95dvh;
+    width: 95dvw;
+    
+    color: #FAF6E9;
+    text-align: justify;
+
+    border-radius: 20px;
+    border: 5px #fff8f023 groove;
+    backdrop-filter: blur();
+
+    padding: 3rem 1.75rem 3rem 1.75rem;
+    gap: 0.75rem;
+}
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+}
+.bunny {
+    width: 15%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bunny img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
