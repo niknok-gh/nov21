@@ -16,8 +16,8 @@
     --font-primary: Tahoma, Verdana, system-ui, -apple-system, sans-serif;
 
     /* Font Sizes */
-    --text-sm: 0.875rem;
-    --text-base: 1rem;
+    --text-sm: 0.675rem;
+    --text-base: 0.875rem;
 }
 html {
     scroll-behavior: smooth;
@@ -58,7 +58,8 @@ body {
     flex-direction: column;
     align-items: center;
 
-    height: 95dvh;
+    min-height: 95dvh;
+    height: auto;
     width: 95dvw;
     
     color: #FAF6E9;
