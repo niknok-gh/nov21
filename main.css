@@ -31,3 +31,6 @@ button {
 .no:hover, .no:active {
     background-color: #af2c2c;
 }
+p {
+    font-size: 0.65rem;
+}
